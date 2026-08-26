@@ -1,7 +1,12 @@
 /* =========================================================
-   ECOREPAIR TECH - BIBLIOTECA DIGITAL PORTÁTIL
-   Diseño de la página
+   ECOREPAIR TECH
+   BIBLIOTECA DIGITAL PORTÁTIL
    ========================================================= */
+
+
+/* =========================
+   GENERAL
+   ========================= */
 
 * {
     margin: 0;
@@ -20,6 +25,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* =========================
    MENÚ
    ========================= */
@@ -28,12 +34,15 @@ body {
     width: 100%;
     padding: 18px 7%;
     background: white;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     position: sticky;
     top: 0;
     z-index: 1000;
+
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -64,23 +73,41 @@ nav a:hover {
     color: #55a630;
 }
 
+
 /* =========================
-   INICIO
+   BOTONES
    ========================= */
 
-.hero {
-    min-height: 650px;
-    padding: 80px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    background: linear-gradient(135deg, #edf8f1, #ffffff);
+.boton,
+.participa button {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #55a630;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.hero-texto {
-    max-width: 650px;
+.boton:hover,
+.participa button:hover {
+    background: #3f8124;
+    transform: translateY(-3px);
 }
+
+
+/* =========================
+   TEXTOS GENERALES
+   ========================= */
 
 .etiqueta,
 .subtitulo {
@@ -91,10 +118,40 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
+
+/* =========================
+   INICIO
+   ========================= */
+
+.hero {
+    min-height: 650px;
+
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf8f1,
+            #ffffff
+        );
+}
+
+.hero-texto {
+    max-width: 650px;
+}
+
 .hero h1 {
     font-size: 64px;
     line-height: 1.05;
+
     color: #173c2b;
+
     margin-bottom: 25px;
 }
 
@@ -105,35 +162,20 @@ nav a:hover {
 .hero .frase {
     font-size: 25px;
     font-weight: 600;
+
     color: #315442;
+
     margin-bottom: 18px;
 }
 
 .hero-texto > p:not(.etiqueta):not(.frase) {
     font-size: 17px;
+
     margin-bottom: 30px;
+
     color: #53675c;
 }
 
-.boton,
-.participa button {
-    display: inline-block;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 30px;
-    background: #55a630;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.boton:hover,
-.participa button:hover {
-    background: #3f8124;
-    transform: translateY(-3px);
-}
 
 /* =========================
    ELEMENTO VISUAL
@@ -142,7 +184,9 @@ nav a:hover {
 .hero-imagen {
     width: 400px;
     height: 400px;
+
     position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,27 +195,42 @@ nav a:hover {
 .circulo {
     width: 300px;
     height: 300px;
+
     border-radius: 50%;
+
     background: #dff1e4;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-size: 140px;
-    box-shadow: 0 20px 50px rgba(47, 100, 65, 0.18);
+
+    box-shadow:
+        0 20px 50px
+        rgba(47, 100, 65, 0.18);
 }
 
 .libro,
 .hoja {
     position: absolute;
+
     width: 75px;
     height: 75px;
+
     border-radius: 50%;
+
     background: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-size: 38px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.12);
 }
 
 .libro {
@@ -183,6 +242,7 @@ nav a:hover {
     bottom: 35px;
     left: 25px;
 }
+
 
 /* =========================
    SECCIONES
@@ -196,16 +256,22 @@ nav a:hover {
 .seccion h2,
 .recursos h2 {
     font-size: 40px;
+
     color: #173c2b;
+
     margin-bottom: 25px;
 }
 
 .descripcion {
     max-width: 850px;
+
     margin: 0 auto 15px;
+
     color: #596b61;
+
     font-size: 17px;
 }
+
 
 /* =========================
    TARJETAS
@@ -213,16 +279,26 @@ nav a:hover {
 
 .tarjetas {
     margin-top: 50px;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 25px;
 }
 
 .tarjeta {
     background: white;
+
     padding: 35px 25px;
+
     border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.07);
+
     transition: 0.3s;
 }
 
@@ -244,23 +320,32 @@ nav a:hover {
     color: #63736a;
 }
 
+
 /* =========================
    PROBLEMA
    ========================= */
 
 .problema {
     padding: 80px 8%;
+
     background: #173c2b;
+
     color: white;
+
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
     gap: 60px;
+
     align-items: center;
 }
 
 .problema h2 {
     font-size: 40px;
     line-height: 1.2;
+
     margin-bottom: 25px;
 }
 
@@ -274,10 +359,16 @@ nav a:hover {
 }
 
 .problema-card {
-    background: rgba(255, 255, 255, 0.1);
+    background:
+        rgba(255, 255, 255, 0.1);
+
     padding: 40px;
+
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.15);
 }
 
 .problema-card span {
@@ -289,32 +380,49 @@ nav a:hover {
     margin: 15px 0;
 }
 
+
 /* =========================
    PASOS
    ========================= */
 
 .pasos {
     max-width: 900px;
+
     margin: 50px auto 0;
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
     gap: 25px;
 }
 
 .paso {
     background: white;
+
     border-radius: 18px;
+
     padding: 30px;
+
     display: flex;
+
     align-items: flex-start;
+
     gap: 20px;
+
     text-align: left;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.06);
 }
 
 .paso > span {
     font-size: 30px;
+
     font-weight: 800;
+
     color: #55a630;
 }
 
@@ -327,27 +435,37 @@ nav a:hover {
     color: #68776e;
 }
 
+
 /* =========================
    RECURSOS
    ========================= */
 
 .recursos {
     padding: 90px 8%;
+
     background: #edf8f1;
+
     text-align: center;
 }
 
 .recursos-grid {
     margin-top: 50px;
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
     gap: 20px;
 }
 
 .recurso {
     background: white;
+
     padding: 30px 20px;
+
     border-radius: 18px;
+
     transition: 0.3s;
 }
 
@@ -361,6 +479,7 @@ nav a:hover {
 
 .recurso h3 {
     color: #28633f;
+
     margin: 12px 0;
 }
 
@@ -368,55 +487,226 @@ nav a:hover {
     color: #68776e;
 }
 
+
 /* =========================
    ECONOMÍA CIRCULAR
    ========================= */
 
 .circular {
     padding: 90px 8%;
+
     background: white;
 }
 
 .circular-texto {
     max-width: 1000px;
+
     margin: auto;
+
     text-align: center;
 }
 
 .circular h2 {
     font-size: 42px;
+
     color: #173c2b;
+
     margin-bottom: 20px;
 }
 
 .circular p {
     max-width: 800px;
+
     margin: 0 auto;
+
     color: #5d6e64;
+
     font-size: 17px;
 }
 
 .proceso-circular {
     margin-top: 40px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 15px;
+
     flex-wrap: wrap;
 }
 
 .proceso-circular span {
     padding: 12px 20px;
+
     border-radius: 30px;
+
     background: #dff1e4;
+
     color: #28633f;
+
     font-weight: 700;
 }
 
 .proceso-circular b {
     color: #55a630;
+
     font-size: 22px;
 }
+
+
+/* =========================
+   MULTIMEDIA
+   ========================= */
+
+.multimedia {
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0faf3,
+            #ffffff
+        );
+
+    text-align: center;
+}
+
+.multimedia h2 {
+    font-size: 42px;
+
+    color: #173c2b;
+
+    margin-bottom: 20px;
+}
+
+.multimedia-intro {
+    max-width: 800px;
+
+    margin: 0 auto 45px;
+
+    color: #596b61;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   AUDIO
+   ========================= */
+
+.audio-card {
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.08);
+}
+
+.audio-card h3 {
+    color: #28633f;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.audio-card p {
+    color: #68776e;
+
+    margin-bottom: 20px;
+}
+
+.audio-card audio {
+    width: 100%;
+}
+
+
+/* =========================
+   VIDEOS
+   ========================= */
+
+.videos-grid {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.video-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+}
+
+.video-titulo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.video-titulo span {
+    font-size: 30px;
+}
+
+.video-card h3 {
+    color: #28633f;
+
+    font-size: 21px;
+}
+
+.video-card video {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 15px;
+
+    background: #111;
+}
+
+.video-card p {
+    color: #68776e;
+
+    margin-top: 18px;
+
+    line-height: 1.6;
+}
+
 
 /* =========================
    IMPACTO
@@ -424,17 +714,28 @@ nav a:hover {
 
 .impacto-grid {
     max-width: 1100px;
+
     margin: 50px auto 0;
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
     gap: 20px;
 }
 
 .impacto-card {
     background: white;
+
     padding: 30px 20px;
+
     border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.07);
+
     transition: 0.3s;
 }
 
@@ -448,6 +749,7 @@ nav a:hover {
 
 .impacto-card h3 {
     margin: 15px 0 10px;
+
     color: #28633f;
 }
 
@@ -455,48 +757,262 @@ nav a:hover {
     color: #68776e;
 }
 
+
 /* =========================
    PARTICIPA
    ========================= */
 
 .participa {
     padding: 100px 8%;
+
     text-align: center;
-    background: linear-gradient(135deg, #dff1e4, #edf8f1);
+
+    background:
+        linear-gradient(
+            135deg,
+            #dff1e4,
+            #edf8f1
+        );
 }
 
 .participa h2 {
     font-size: 45px;
+
     color: #173c2b;
+
     margin-bottom: 20px;
 }
 
-.participa > p:not(.subtitulo):not(#mensaje) {
-    max-width: 700px;
-    margin: 0 auto 30px;
+.participa-descripcion {
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
     color: #53675c;
+
     font-size: 18px;
 }
 
-#mensaje {
-    margin-top: 25px;
-    font-weight: bold;
-    color: #28633f;
-}
 
 /* =========================
-   PIE DE PÁGINA
+   FORMULARIO
+   ========================= */
+
+#formularioParticipa {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 35px 40px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(22, 76, 59, 0.12);
+
+    text-align: left;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px 25px;
+}
+
+#formularioParticipa h3 {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    font-size: 27px;
+
+    color: #164c3b;
+
+    margin-bottom: 10px;
+}
+
+.campo {
+    width: 100%;
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+#formularioParticipa label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #244f40;
+
+    font-weight: 700;
+}
+
+#formularioParticipa input,
+#formularioParticipa select,
+#formularioParticipa textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border:
+        1px solid #cbded3;
+
+    border-radius: 12px;
+
+    background: #f9fcfa;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+#formularioParticipa input:focus,
+#formularioParticipa select:focus,
+#formularioParticipa textarea:focus {
+    outline: none;
+
+    border-color: #4cae32;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(76, 174, 50, 0.12);
+}
+
+#formularioParticipa textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+#formularioParticipa button {
+    grid-column: 1 / -1;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 15px 25px;
+
+    background: #4caf2f;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+#formularioParticipa button:hover {
+    background: #398c25;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MENSAJE DEL FORMULARIO
+   ========================= */
+
+#mensajeParticipacion {
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.mensaje-exito {
+    color: #2d8738;
+}
+
+.mensaje-error {
+    color: #b52b24;
+}
+
+
+/* =========================
+   INFORMACIÓN PARTICIPA
+   ========================= */
+
+.participa-info {
+    max-width: 850px;
+
+    margin: 35px auto 0;
+
+    padding: 35px;
+
+    background: #164c3b;
+
+    color: white;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(22, 76, 59, 0.15);
+}
+
+.participa-info h3 {
+    margin-top: 0;
+
+    font-size: 27px;
+}
+
+.participa-info p {
+    line-height: 1.7;
+}
+
+.mini-impacto {
+    margin-top: 20px;
+
+    padding: 16px;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    border-radius: 15px;
+}
+
+.mini-impacto span {
+    font-size: 28px;
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   FOOTER
    ========================= */
 
 footer {
     padding: 45px 8%;
+
     text-align: center;
+
     background: #10291d;
+
     color: white;
 }
 
 footer h3 {
     font-size: 25px;
+
     margin-bottom: 10px;
 }
 
@@ -506,13 +1022,18 @@ footer h3 span {
 
 footer p {
     color: #c7d8cd;
+
     margin-bottom: 5px;
 }
 
 .linea {
     width: 100%;
+
     height: 1px;
-    background: rgba(255, 255, 255, 0.15);
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
     margin: 25px 0;
 }
 
@@ -520,25 +1041,30 @@ footer small {
     color: #9fb2a5;
 }
 
+
 /* =========================
-   RESPONSIVE
+   TABLET
    ========================= */
 
 @media (max-width: 900px) {
 
     .encabezado {
         flex-direction: column;
+
         gap: 15px;
     }
 
     nav {
         flex-wrap: wrap;
+
         justify-content: center;
+
         gap: 12px;
     }
 
     .hero {
         flex-direction: column;
+
         text-align: center;
     }
 
@@ -554,22 +1080,37 @@ footer small {
     .circulo {
         width: 230px;
         height: 230px;
+
         font-size: 100px;
     }
 
     .tarjetas,
     .recursos-grid,
     .impacto-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .problema {
         grid-template-columns: 1fr;
     }
 
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
+
+/* =========================
+   CELULAR
+   ========================= */
+
 @media (max-width: 600px) {
+
+    .hero {
+        padding: 60px 5%;
+    }
 
     .hero h1 {
         font-size: 40px;
@@ -583,7 +1124,8 @@ footer small {
     .recursos h2,
     .circular h2,
     .problema h2,
-    .participa h2 {
+    .participa h2,
+    .multimedia h2 {
         font-size: 32px;
     }
 
@@ -602,6 +1144,7 @@ footer small {
     .circulo {
         width: 200px;
         height: 200px;
+
         font-size: 80px;
     }
 
@@ -609,205 +1152,25 @@ footer small {
     .hoja {
         width: 60px;
         height: 60px;
-        font-size: 30px;
-    }
-/* ================================
-   PARTICIPA - DISEÑO FINAL
-================================ */
 
-#participa {
-    padding: 90px 8%;
-    background: linear-gradient(135deg, #eef9f1, #ffffff);
-    text-align: center;
-}
-
-#participa h2 {
-    font-size: 42px;
-    color: #164c3b;
-    margin: 10px 0 20px;
-}
-
-#participa > p {
-    max-width: 780px;
-    margin: 0 auto 45px;
-    color: #49665b;
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-/* TARJETA DEL FORMULARIO */
-
-#formularioParticipa {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 35px 40px;
-    background: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0 12px 35px rgba(22, 76, 59, 0.12);
-    text-align: left;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 25px;
-}
-
-/* TÍTULO */
-
-#formularioParticipa h3 {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-size: 26px;
-    color: #164c3b;
-    margin: 0 0 10px;
-}
-
-/* ETIQUETAS */
-
-#formularioParticipa label {
-    display: block;
-    margin-bottom: 8px;
-    color: #244f40;
-    font-weight: 700;
-}
-
-/* CAMPOS */
-
-#formularioParticipa input,
-#formularioParticipa select,
-#formularioParticipa textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 14px 15px;
-
-    border: 1px solid #cbded3;
-    border-radius: 12px;
-
-    background: #f9fcfa;
-    font-family: inherit;
-    font-size: 15px;
-
-    transition: 0.2s;
-}
-
-#formularioParticipa input:focus,
-#formularioParticipa select:focus,
-#formularioParticipa textarea:focus {
-    outline: none;
-    border-color: #4cae32;
-    box-shadow: 0 0 0 3px rgba(76, 174, 50, 0.12);
-}
-
-#formularioParticipa textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-/* MENSAJE OCUPA TODO EL ANCHO */
-
-#formularioParticipa textarea {
-    grid-column: 1 / -1;
-}
-
-/* BOTÓN */
-
-#formularioParticipa button {
-    grid-column: 1 / -1;
-
-    border: none;
-    border-radius: 14px;
-
-    padding: 15px 25px;
-
-    background: #4caf2f;
-    color: white;
-
-    font-size: 16px;
-    font-weight: 700;
-
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-#formularioParticipa button:hover {
-    background: #398c25;
-    transform: translateY(-2px);
-}
-
-/* INFORMACIÓN */
-
-.participa-info {
-    max-width: 850px;
-    margin: 35px auto 0;
-
-    padding: 35px;
-
-    background: #164c3b;
-    color: white;
-
-    border-radius: 25px;
-
-    box-shadow: 0 12px 30px rgba(22, 76, 59, 0.15);
-}
-
-.participa-info h3 {
-    margin-top: 0;
-    font-size: 27px;
-}
-
-.participa-info p {
-    line-height: 1.7;
-}
-
-.mini-impacto {
-    margin-top: 20px;
-    padding: 16px;
-
-    background: rgba(255,255,255,0.10);
-    border-radius: 15px;
-}
-
-.mini-impacto span {
-    font-size: 28px;
-}
-
-/* MENSAJES */
-
-#mensajeParticipacion {
-    max-width: 850px;
-    margin: 20px auto;
-    text-align: center;
-    font-weight: bold;
-}
-
-.mensaje-exito {
-    color: #2d8738;
-}
-
-.mensaje-error {
-    color: #b52b24;
-}
-
-/* CELULAR */
-
-@media (max-width: 700px) {
-
-    #participa {
-        padding: 60px 5%;
-    }
-
-    #participa h2 {
         font-size: 30px;
     }
 
     #formularioParticipa {
         grid-template-columns: 1fr;
+
         padding: 25px;
     }
 
+    .campo-completo,
     #formularioParticipa h3,
-    #formularioParticipa textarea,
     #formularioParticipa button {
         grid-column: 1;
     }
-}
+
+    .multimedia,
+    .participa {
+        padding: 60px 5%;
+    }
+
 }
