@@ -611,5 +611,203 @@ footer small {
         height: 60px;
         font-size: 30px;
     }
+/* ================================
+   PARTICIPA - DISEÑO FINAL
+================================ */
 
+#participa {
+    padding: 90px 8%;
+    background: linear-gradient(135deg, #eef9f1, #ffffff);
+    text-align: center;
+}
+
+#participa h2 {
+    font-size: 42px;
+    color: #164c3b;
+    margin: 10px 0 20px;
+}
+
+#participa > p {
+    max-width: 780px;
+    margin: 0 auto 45px;
+    color: #49665b;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* TARJETA DEL FORMULARIO */
+
+#formularioParticipa {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(22, 76, 59, 0.12);
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+}
+
+/* TÍTULO */
+
+#formularioParticipa h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 26px;
+    color: #164c3b;
+    margin: 0 0 10px;
+}
+
+/* ETIQUETAS */
+
+#formularioParticipa label {
+    display: block;
+    margin-bottom: 8px;
+    color: #244f40;
+    font-weight: 700;
+}
+
+/* CAMPOS */
+
+#formularioParticipa input,
+#formularioParticipa select,
+#formularioParticipa textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+
+    border: 1px solid #cbded3;
+    border-radius: 12px;
+
+    background: #f9fcfa;
+    font-family: inherit;
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+#formularioParticipa input:focus,
+#formularioParticipa select:focus,
+#formularioParticipa textarea:focus {
+    outline: none;
+    border-color: #4cae32;
+    box-shadow: 0 0 0 3px rgba(76, 174, 50, 0.12);
+}
+
+#formularioParticipa textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* MENSAJE OCUPA TODO EL ANCHO */
+
+#formularioParticipa textarea {
+    grid-column: 1 / -1;
+}
+
+/* BOTÓN */
+
+#formularioParticipa button {
+    grid-column: 1 / -1;
+
+    border: none;
+    border-radius: 14px;
+
+    padding: 15px 25px;
+
+    background: #4caf2f;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#formularioParticipa button:hover {
+    background: #398c25;
+    transform: translateY(-2px);
+}
+
+/* INFORMACIÓN */
+
+.participa-info {
+    max-width: 850px;
+    margin: 35px auto 0;
+
+    padding: 35px;
+
+    background: #164c3b;
+    color: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 12px 30px rgba(22, 76, 59, 0.15);
+}
+
+.participa-info h3 {
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.participa-info p {
+    line-height: 1.7;
+}
+
+.mini-impacto {
+    margin-top: 20px;
+    padding: 16px;
+
+    background: rgba(255,255,255,0.10);
+    border-radius: 15px;
+}
+
+.mini-impacto span {
+    font-size: 28px;
+}
+
+/* MENSAJES */
+
+#mensajeParticipacion {
+    max-width: 850px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mensaje-exito {
+    color: #2d8738;
+}
+
+.mensaje-error {
+    color: #b52b24;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    #participa {
+        padding: 60px 5%;
+    }
+
+    #participa h2 {
+        font-size: 30px;
+    }
+
+    #formularioParticipa {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    #formularioParticipa h3,
+    #formularioParticipa textarea,
+    #formularioParticipa button {
+        grid-column: 1;
+    }
+}
 }
